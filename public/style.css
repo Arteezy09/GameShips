@@ -1,0 +1,21 @@
+#field1, #field2 {
+  width: 400px;
+  height: 400px;
+  background: #29B6F6;
+  margin-top: 30px;
+}
+
+.square1, .square2 {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 30px;
+}
+
+.square1:hover, .square2:hover {
+  background: #757575;
+}
+

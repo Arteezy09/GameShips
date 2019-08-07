@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Example</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col s12 xl6">
+        <div id="field1"></div>
+      </div>
+      <div class="col s12 xl6">
+        <div id="field2"></div>
+      </div>
+    </div>
+    <br>
+
+    <div id="options">
+      <div class="row">
+        <div class="col s12 xl6">
+          <h5>Расположение кораблей</h5>
+          <button id="alter">Изменить</button>
+        </div>
+        <div class="col s12 xl6">
+          <h5>Создание новой игры</h5>
+          <input type="text" id="newName" placeholder="Введите своё имя">
+          <button id="newGame">создать игру</button>
+          <br><br>
+          <h5>Присоединиться к игре</h5>
+          <input type="text" id="joinName" placeholder="Введите своё имя">
+          <input type="text" id="room" placeholder="Введите номер комнаты">
+          <button id="joinGame">войти в игру</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="infoText">
+      <div class="row">
+        <div class="col s6 offset-xl3">
+          <div class="card red lighten-4">
+            <div class="card-content black-text">
+              <p id="text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
